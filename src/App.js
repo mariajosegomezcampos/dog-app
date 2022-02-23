@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "@emotion/styled";
+import { MultipleSelectCheck } from "./components/MultipleSelectCheck";
 
+const Contenedor = styled.div`
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: #506663;
+`;
+
+const Heading = styled.h1`
+  color: #506663;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  &::after {
+    content: "";
+    width: 100px;
+    height: 6px;
+    background-color: #8eb0c1;
+    display: block;
+    margin: 10px auto 0 auto;
+  }
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Contenedor>
+     
+        <Heading>Buscar por raza al Instante </Heading>
+
+        <MultipleSelectCheck />
+     
+    </Contenedor>
   );
 }
 
