@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { MultipleSelectCheck } from "./components/MultipleSelectCheck";
+import dog from './image/dog.gif';
 
 const Contenedor = styled.div`
   max-width: 1100px;
@@ -31,6 +32,10 @@ function App() {
     <Contenedor>
      
         <Heading>Buscar por raza al Instante </Heading>
+        <div className="App">
+        {/*Aqui utilizamos la url donde esta alojada la imagen*/}
+        <img src={dog} alt="Logo" />
+      </div>
 
         <MultipleSelectCheck />
      
