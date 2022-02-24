@@ -60,7 +60,7 @@ export const MultipleSelectCheck = () => {
 
   return (
     <div>
-      <FormControl sx={{ m: 3, width: 400 }}>
+      <FormControl sx={{ m: 3, width: 280 }}>
         <InputLabel id="demo-multiple-checkbox-label">Dog</InputLabel>
         <Select
           labelId="demo-multiple-checkbox-label"
